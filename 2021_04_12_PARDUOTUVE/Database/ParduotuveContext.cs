@@ -15,7 +15,7 @@ namespace _2021_04_12_PARDUOTUVE.Database
         public DbSet<BatuDydis> BatuDydziai { get; set; }
         public DbSet<Pardavimas> Pardavimai { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        {//well this sucks
             optionsBuilder.UseInternalServiceProvider("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=_2020_07_23_EFCodeFirstDatabase.VartotojuDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
